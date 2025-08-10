@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "research-paper-fetcher",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": "Vercel"
+        }
+      ]
+    }
+  ]
+}
+
