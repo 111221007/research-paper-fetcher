@@ -61,7 +61,7 @@ git push
 
 ### Step 8: Verify Changes Live
 Visit your live URL to see the changes:
-`https://research-paper-fetcher-111221007.vercel.app`
+`https://research-paper-fetcher-knqa.vercel.app/`
 
 ---
 
@@ -99,7 +99,7 @@ git push
 1. Edit `index.html` (JavaScript sections)
 2. Test locally by opening `index.html` in browser
 3. `git add index.html`
-4. `git commit -m "Add new feature: [feature name]"`
+4. `git commit -m "Add new feature: [feature name] "`
 5. `git push`
 
 ### Scenario 3: Fix Bugs
